@@ -4,34 +4,114 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 body {
-    margin: 0;
-    font-family: raleway;
-    text-align: center;
+	margin: 0;
+	font-family: comic;
+	text-align: center;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
 
-
-
+h1, p, button{
+    margin: 0;
+}
 /*Header*/
 
-
 header {
-    /*position: absolute;*/
-    margin-top: 1em;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 1em;
 }
 
-nav ul{
+header nav {
     margin: 0;
-    padding: none;
+}
+nav ul{
+    position: fixed;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
 nav li{
     display: inline-block;
+    margin: 1em;
+}
+
+nav a{
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: .5em;
+    background: rgb(135, 206, 235);
+}
+
+nav a:hover{
+    background: grey;
+    color: black;
+}
+
+.first-look {
+	background-image: url(../img/back1.jpeg);
+	background-size: cover;
+	background-position: center;
+	padding: 20em 2em;
+    color: #FFF;
+    height: 100vh;
+}
+
+.first-look h1{
+    font-size: 4rem;
+}
+
+.who-am-i{
+    height: 100vh;
+    background-color: burlywood;
+    padding: 10rem
+}
+
+.who-am-i h1{
+    font-size: 5rem;
+    color: rgb(252, 227, 0);
+}
+.who-am-i p{
     margin: 1rem;
 }
-nav a{
-    font-weight: 900;
-    text-decoration: none;
+.interests{
+    height: 100vh;
+    position: unset;
+    background-color: darkgray;
+}
+
+.contact{
+    height: 50vh;
+    background: rgba(17, 17, 19, 0.5);
+}
+
+.contact a{
+    font-size: 2rem;
+    color: rgb(88, 83, 83);
+}
+
+.contact a:hover{
+    color: black;
+}
+
+@media only screen and (max-width:550px){
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    nav a{
+        background: rgba(135, 206, 235, 0.3);
+        color: rgba(13, 14, 13, 0.3);
+    }
 }
