@@ -6,6 +6,7 @@
 
 html{
     scroll-behavior: smooth;
+    cursor: dot;
 }
 body {
 	margin: 0;
@@ -27,7 +28,8 @@ header {
 	position: absolute;
 	left: 0;
 	right: 0;
-	margin: 1em;
+    margin: 1em;
+    cursor: none;
 }
 
 header nav {
@@ -66,6 +68,7 @@ nav a:hover{
 	padding: 20em 2em;
     color: #FFF;
     height: 100vh;
+    cursor: none;
 }
 
 .first-look h1{
@@ -113,5 +116,141 @@ nav a:hover{
     nav a{
         background: rgba(135, 206, 235, 0.3);
         color: rgba(13, 14, 13, 0.3);
+    }
+}
+
+
+#follower {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#follower #circle1 {
+    position: absolute;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+    background: #fff;
+    border-radius: 50%;
+    height: 0em;
+    width: 0em;
+    margin-top: 0em;
+    margin-left: 0em;
+}
+
+#follower #circle2 {
+    position: absolute;
+    -webkit-animation: pulse 4s infinite;
+
+    animation: pulse 4s infinite;
+    background: rgba(200, 0, 0, 0.8);
+    border-radius: 50%;
+    height: 0em;
+    width: 0em;
+    margin-top: 0em;
+    margin-left: 0em;
+}
+
+@-moz-keyframes pulse {
+    0% {
+        opacity: 0.2;
+        height: 1em;
+        width: 1em;
+        margin-top: -0.5em;
+        margin-left: -0.5em;
+    }
+
+    50% {
+        opacity: 0.9;
+        height: 3em;
+        width: 3em;
+        margin-top: -1.5em;
+        margin-left: -1.5em;
+    }
+
+    100% {
+        opacity: 0.2;
+        height: 1em;
+        width: 1em;
+        margin-top: -0.5em;
+        margin-left: -0.5em;
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        opacity: 0.2;
+        height: 1em;
+        width: 1em;
+        margin-top: -0.5em;
+        margin-left: -0.5em;
+    }
+
+    50% {
+        opacity: 0.9;
+        height: 3em;
+        width: 3em;
+        margin-top: -1.5em;
+        margin-left: -1.5em;
+    }
+
+    100% {
+        opacity: 0.2;
+        height: 1em;
+        width: 1em;
+        margin-top: -0.5em;
+        margin-left: -0.5em;
+    }
+}
+
+@-o-keyframes pulse {
+    0% {
+        opacity: 0.2;
+        height: 1em;
+        width: 1em;
+        margin-top: -0.5em;
+        margin-left: -0.5em;
+    }
+
+    50% {
+        opacity: 0.9;
+        height: 3em;
+        width: 3em;
+        margin-top: -1.5em;
+        margin-left: -1.5em;
+    }
+
+    100% {
+        opacity: 0.2;
+        height: 1em;
+        width: 1em;
+        margin-top: -0.5em;
+        margin-left: -0.5em;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.2;
+        height: 1em;
+        width: 1em;
+        margin-top: -0.5em;
+        margin-left: -0.5em;
+    }
+
+    50% {
+        opacity: 0.9;
+        height: 3em;
+        width: 3em;
+        margin-top: -1.5em;
+        margin-left: -1.5em;
+    }
+
+    100% {
+        opacity: 0.2;
+        height: 1em;
+        width: 1em;
+        margin-top: -0.5em;
+        margin-left: -0.5em;
     }
 }
