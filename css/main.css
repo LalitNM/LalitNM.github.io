@@ -14,13 +14,26 @@ body {
 	text-align: center;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
-}
-
 h1, p, button{
     margin: 0;
+}
+
+h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+p{
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
 }
 /*Header*/
 
@@ -49,11 +62,13 @@ nav li{
 
 nav a{
     font-weight: bold;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1rem;
     padding: .5em;
     background: rgb(135, 206, 235);
+    
 }
 
 nav a:hover{
@@ -66,39 +81,78 @@ nav a:hover{
 	background-size: cover;
 	background-position: center;
 	padding: 20em 2em;
-    color: #FFF;
+    color: white;
     height: 100vh;
     cursor: none;
 }
 
 .first-look h1{
-    font-size: 4rem;
+    font-size: 3rem;
 }
-
 .who-am-i{
     height: 100vh;
-    background-color: burlywood;
-    padding: 10rem
+    background: url('../img/blurr1.jpg');
+    background-position: center;
+    padding: 7rem 1rem;
+}
+.who-am-i .text-box .profile{
+    height: 40vh;
+    width: 40vw;
+    float: right;
+    position: relative;
 }
 
-.who-am-i h1{
-    font-size: 5rem;
-    color: rgb(252, 227, 0);
-}
-.who-am-i p{
-    margin: 1rem;
-}
-.interests{
+.work{
     height: 100vh;
-    position: unset;
-    background-color: darkgray;
+    background: url('../img/blurr2.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 7em 1em;
 }
 
-.contact{
+@media only screen and (max-width:700px){
+    .work{
+        height: 120vh;
+    }
+}
+.work .work-list li{
+    display: inline-block;
+    height: 40px;
+    width: 180px;
+}
+
+.work .work-list li h4{
+    font-size: 2rem;
+}
+.work .work-list li p{
+    font-size: 1.5em;
+}
+
+
+.achievements{
+    height: 100vh;
+    background: url('../img/pexels-photo-3532087.jpeg');
+}
+
+.achievements ul{
+    margin: 0;
+}
+.contact form{
     height: 50vh;
-    background: rgba(17, 17, 19, 0.5);
+    /* background: rgba(233, 73, 233, 0.8); */
 }
 
+.contact form .details{
+    display: inline-block;
+}
+.contact .links{
+    height: 50vh;
+    background: grey;
+}
+.contact .links p{
+    margin: 0;
+    padding: 3rem;
+}
 .contact a{
     font-size: 2rem;
     color: rgb(88, 83, 83);
@@ -108,18 +162,31 @@ nav a:hover{
     color: black;
 }
 
-@media only screen and (max-width:550px){
+.contact a{
+    padding: 1rem;
+}
+
+.copyright{
+    height: 6vh;
+    background: grey;
+}
+.copyright h3{
+    margin: 0;
+    margin-left: 2rem;
+    text-align: left;
+}
+@media only screen and (max-width:700px){
     nav ul{
         display: flex;
         flex-direction: column;
     }
     nav a{
         background: rgba(135, 206, 235, 0.3);
-        color: rgba(13, 14, 13, 0.3);
+        color: white;
     }
 }
 
-
+/*---------------------------------------animation for cursor-----------------------------------*/
 #follower {
     position: absolute;
     top: 50%;
