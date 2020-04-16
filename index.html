@@ -10,10 +10,6 @@
 </head>
 
 <body>
-    <div class="spinner">
-        <div class="dot1"></div>
-        <div class="dot2"></div>
-    </div>
     <section id='follower' style="height: 100vh;">
         <div id="circle1"></div>
         <div id="circle2"></div>
@@ -112,18 +108,7 @@
         <h3> &copy; 2020 <strong><a href="https://github.com/LalitNM">Lalit Narayan</a></strong></h3>
     </section>
 </body>
-<script>
-    $(document).ready(function () {
-        //Preloader
-        preloaderFadeOutTime = 500;
-        function hidePreloader() {
-            var preloader = $('.spinner-wrapper');
-            preloader.fadeOut(preloaderFadeOutTime);
-        }
-        hidePreloader();
-    });
+<script src="./js/main.js">
 </script>
-
-<script src="./js/main.js"></script>
 
 </html>
