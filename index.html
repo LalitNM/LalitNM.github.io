@@ -54,7 +54,8 @@
             <!--work-item-3-->
             <li>
                 <h4>Won URI competition</h4>
-                <p>Won URI competition organised by <strong><a href="https://pc.iitmandi.co.in">Kamand Prompt</a></strong></p>
+                <p>Won URI competition organised by <strong><a href="https://pc.iitmandi.co.in">Kamand
+                            Prompt</a></strong></p>
                 <!-- <button class="work-button">Github Repository</button> -->
             </li>
             <!--work-item-4-->
@@ -104,9 +105,25 @@
         </div>
     </section>
     <section class="copyright">
-        <h3 > &copy; 2020 <strong><a href="https://github.com/LalitNM">Lalit Narayan</a></strong></h3>
+        <h3> &copy; 2020 <strong><a href="https://github.com/LalitNM">Lalit Narayan</a></strong></h3>
     </section>
 </body>
+<div class="spinner">
+    <div class="dot1"></div>
+    <div class="dot2"></div>
+</div>
+<script>
+    $(document).ready(function () {
+        //Preloader
+        preloaderFadeOutTime = 500;
+        function hidePreloader() {
+            var preloader = $('.spinner-wrapper');
+            preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+    });
+</script>
+
 <script src="./js/main.js"></script>
 
 </html>
