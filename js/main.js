@@ -1,9 +1,7 @@
 (function () {
-    var follower, init, mouseX, mouseY, positionElement, printout, timer;
+    var follower, init, mouseX, mouseY, positionElement, timer;
 
     follower = document.getElementById('follower');
-
-    printout = document.getElementById('printout');
 
     mouseX = event => {
         return event.clientX;
