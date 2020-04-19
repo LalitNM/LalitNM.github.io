@@ -1,28 +1,30 @@
 @import url('../css/fonts.css');
-
 * {
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
 body {
-	margin: 0;
-	font-family: comic;
-	text-align: center;
+    margin: 0;
+    font-family: comic;
+    text-align: center;
 }
 
-h1, p, button{
+h1,
+p,
+button {
     margin: 0;
 }
 
-h1{
+h1 {
     text-transform: uppercase;
     font-size: 3rem;
 }
 
-p{
+p {
     margin: 1rem;
     font-size: 2rem;
 }
@@ -31,34 +33,37 @@ ul {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
+
+
 /*Header*/
 
 header {
-	position: absolute;
-	left: 0;
-	right: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
     margin: 1em;
 }
 
 header nav {
     margin: 0;
 }
-nav ul{
+
+nav ul {
     position: fixed;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-nav li{
+nav li {
     display: inline-block;
     margin: 1em;
 }
 
-nav a{
+nav a {
     font-weight: bold;
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -66,42 +71,42 @@ nav a{
     font-size: 1rem;
     padding: .5em;
     background: rgb(135, 206, 235);
-    
 }
 
-nav a:hover{
+nav a:hover {
     background: grey;
     color: black;
 }
 
 .first-look {
-	background-image: url(../img/background.jpeg);
-	background-size: cover;
-	background-position: center;
-	padding: 20em 2em;
+    background-image: url(../img/background.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 20em 2em;
     color: white;
     height: 100vh;
     cursor: none;
 }
 
-.first-look h1{
+.first-look h1 {
     font-size: 3rem;
 }
-.who-am-i{
+
+.who-am-i {
     height: 100vh;
     background: url('../img/blurr1.jpg');
     background-position: center;
     padding: 7rem 1rem;
 }
 
-.who-am-i .text-box .profile{
+.who-am-i .text-box .profile {
     height: 40vh;
     width: 40vw;
     float: right;
     position: relative;
 }
 
-.work{
+.work {
     height: 100vh;
     background: url('../img/blurr2.jpg');
     background-position: center;
@@ -109,90 +114,86 @@ nav a:hover{
     padding: 7em 1em;
 }
 
-
-.work .work-list li{
+.work .work-list li {
     display: inline-block;
     height: 40px;
     width: 180px;
 }
 
-.work .work-list li h4{
+.wourk .work-list li h4 {
     font-size: 2rem;
 }
-.work .work-list li p{
+
+.work .work-list li p {
     font-size: 1.5em;
 }
 
-
-.achievements{
-    height: 100vh;
-    background: url('../img/pexels-photo-3532087.jpeg');
-}
-
-.achievements ul{
-    margin: 0;
-}
-.contact form{
+.contact form {
     height: 50vh;
-    /* background: rgba(233, 73, 233, 0.8); */
+    background: rgba(233, 73, 233, 0.8);
 }
 
-.contact form .details{
+.contact form .details {
     display: inline-block;
 }
-.contact .links{
+
+.contact .links {
     height: 50vh;
     background: grey;
 }
-.contact .links p{
+
+.contact .links p {
     margin: 0;
     padding: 3rem;
 }
-.contact a{
+
+.contact a {
     font-size: 2rem;
     color: rgb(88, 83, 83);
 }
 
-.contact a:hover{
+.contact a:hover {
     color: black;
 }
 
-.contact a{
+.contact a {
     padding: 1rem;
 }
 
-.copyright{
+.copyright {
     height: 6vh;
     background: grey;
 }
-.copyright h3{
+
+.copyright h3 {
     margin: 0;
     margin-left: 2rem;
     text-align: left;
 }
-@media only screen and (max-width:500px){
-    .first-look{
+
+@media only screen and (max-width:500px) {
+    .first-look {
         padding: 15em 2em;
     }
-    nav ul{
+    nav ul {
         display: flex;
         flex-direction: column;
     }
-    nav a{
+    nav a {
         background: rgba(135, 206, 235, 0.3);
         color: white;
     }
-    .who-am-i{
+    .who-am-i {
         height: 120vh;
     }
-    
-    .work{
+    .work {
         height: 200vh;
     }
-    
 }
 
+
 /*---------------------------------------animation for cursor-----------------------------------*/
+
 #follower {
     position: absolute;
     top: 50%;
@@ -214,7 +215,6 @@ nav a:hover{
 #follower #circle2 {
     position: absolute;
     -webkit-animation: pulse 4s infinite;
-
     animation: pulse 4s infinite;
     background: rgba(241, 245, 13, 0.8);
     border-radius: 50%;
@@ -232,7 +232,6 @@ nav a:hover{
         margin-top: -0.5em;
         margin-left: -0.5em;
     }
-
     50% {
         opacity: 0.9;
         height: 3em;
@@ -240,7 +239,6 @@ nav a:hover{
         margin-top: -1.5em;
         margin-left: -1.5em;
     }
-
     100% {
         opacity: 0.2;
         height: 1em;
@@ -258,7 +256,6 @@ nav a:hover{
         margin-top: -0.5em;
         margin-left: -0.5em;
     }
-
     50% {
         opacity: 0.9;
         height: 3em;
@@ -266,7 +263,6 @@ nav a:hover{
         margin-top: -1.5em;
         margin-left: -1.5em;
     }
-
     100% {
         opacity: 0.2;
         height: 1em;
@@ -284,7 +280,6 @@ nav a:hover{
         margin-top: -0.5em;
         margin-left: -0.5em;
     }
-
     50% {
         opacity: 0.9;
         height: 3em;
@@ -292,7 +287,6 @@ nav a:hover{
         margin-top: -1.5em;
         margin-left: -1.5em;
     }
-
     100% {
         opacity: 0.2;
         height: 1em;
@@ -310,7 +304,6 @@ nav a:hover{
         margin-top: -0.5em;
         margin-left: -0.5em;
     }
-
     50% {
         opacity: 0.9;
         height: 3em;
@@ -318,7 +311,6 @@ nav a:hover{
         margin-top: -1.5em;
         margin-left: -1.5em;
     }
-
     100% {
         opacity: 0.2;
         height: 1em;
@@ -327,7 +319,6 @@ nav a:hover{
         margin-left: -0.5em;
     }
 }
-
 
 
 /*---------------------------------------animation for cursor-----------------------------------*/
