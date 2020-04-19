@@ -41,7 +41,7 @@ a {
 }
 
 button {
-    width: 15vw;
+    width: 5rem;
     height: 2rem;
     background: rgb(170, 215, 221);
     border: none;
@@ -105,7 +105,6 @@ nav a:hover {
     padding: 20em 2em;
     color: white;
     height: 100vh;
-    cursor: none;
 }
 
 .first-look h1 {
@@ -154,6 +153,7 @@ nav a:hover {
 form {
     height: 80vh;
     background: rgba(231, 91, 231, 0.8);
+    padding: 10vh 10vw;
 }
 
 form .details {
@@ -183,7 +183,7 @@ label {
 }
 
 .contact .links {
-    height: 50vh;
+    height: 35vh;
     background: grey;
 }
 
@@ -206,19 +206,21 @@ label {
 }
 
 .copyright {
-    height: 6vh;
+    height: 10vh;
+    padding-top: 2rem;
+    padding-bottom: 0;
     background: grey;
 }
 
 .copyright h3 {
     margin: 0;
-    margin-left: 2rem;
+    margin-left: 1rem;
     text-align: left;
 }
 
 @media only screen and (max-width:435px) {
     .first-look {
-        padding: 15em 2em;
+        padding: 13em 2em;
     }
     nav ul {
         display: flex;
@@ -232,141 +234,16 @@ label {
         height: 120vh;
     }
     .work {
-        height: 200vh;
+        height: 210vh;
     }
     form {
         height: 90vh;
     }
-}
-
-
-/*---------------------------------------animation for cursor-----------------------------------*/
-
-#follower {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
-#follower #circle1 {
-    position: absolute;
-    -webkit-animation: pulse 2s infinite;
-    animation: pulse 2s infinite;
-    background: #fff;
-    border-radius: 50%;
-    height: 0em;
-    width: 0em;
-    margin-top: 0em;
-    margin-left: 0em;
-}
-
-#follower #circle2 {
-    position: absolute;
-    -webkit-animation: pulse 4s infinite;
-    animation: pulse 4s infinite;
-    background: rgba(241, 245, 13, 0.8);
-    border-radius: 50%;
-    height: 0em;
-    width: 0em;
-    margin-top: 0em;
-    margin-left: 0em;
-}
-
-@-moz-keyframes pulse {
-    0% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
+    .contact .links {
+        height: 55vh;
+        background: grey;
     }
-    50% {
-        opacity: 0.9;
-        height: 3em;
-        width: 3em;
-        margin-top: -1.5em;
-        margin-left: -1.5em;
-    }
-    100% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
+    .contact a {
+        font-size: 1.5rem;
     }
 }
-
-@-webkit-keyframes pulse {
-    0% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-    }
-    50% {
-        opacity: 0.9;
-        height: 3em;
-        width: 3em;
-        margin-top: -1.5em;
-        margin-left: -1.5em;
-    }
-    100% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-    }
-}
-
-@-o-keyframes pulse {
-    0% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-    }
-    50% {
-        opacity: 0.9;
-        height: 3em;
-        width: 3em;
-        margin-top: -1.5em;
-        margin-left: -1.5em;
-    }
-    100% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-    }
-}
-
-@keyframes pulse {
-    0% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-    }
-    50% {
-        opacity: 0.9;
-        height: 3em;
-        width: 3em;
-        margin-top: -1.5em;
-        margin-left: -1.5em;
-    }
-    100% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-    }
-}
-
-
-/*---------------------------------------animation for cursor-----------------------------------*/
