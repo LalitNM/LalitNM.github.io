@@ -9,19 +9,22 @@ html {
 
 body {
     margin: 0;
-    font-family: comic;
+    font-family: raleway;
     text-align: center;
 }
 
 h1,
-p,
-button {
+p {
     margin: 0;
 }
 
 h1 {
     text-transform: uppercase;
     font-size: 3rem;
+}
+
+h4 {
+    font-size: 2rem;
 }
 
 p {
@@ -35,6 +38,23 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+button {
+    width: 15vw;
+    height: 2rem;
+    background: rgb(170, 215, 221);
+    border: none;
+    border-width: .1rem;
+    border-radius: 2rem;
+}
+
+button:hover {
+    background: rgba(231, 91, 231, 0.8);
+    border: solid;
+    border-width: .1rem;
+    border-radius: 2rem;
+    border-color: white;
 }
 
 
@@ -120,21 +140,46 @@ nav a:hover {
     width: 180px;
 }
 
-.wourk .work-list li h4 {
-    font-size: 2rem;
-}
-
 .work .work-list li p {
     font-size: 1.5em;
 }
 
-.contact form {
-    height: 50vh;
-    background: rgba(233, 73, 233, 0.8);
+
+/*Form*/
+
+.contact h1 {
+    padding: 10vh;
 }
 
-.contact form .details {
+form {
+    height: 80vh;
+    background: rgba(231, 91, 231, 0.8);
+}
+
+form .details {
     display: inline-block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0.25em;
+    border: solid 1px rgba(255, 255, 255, 0.15);
+    width: 100%;
+    height: 5vh;
+    color: gray;
+    font-weight: 700;
+}
+
+label {
+    color: #ffffff;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 0 0 0.7em 0;
+    display: block;
+    font-size: 1.5em;
 }
 
 .contact .links {
@@ -171,7 +216,7 @@ nav a:hover {
     text-align: left;
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:435px) {
     .first-look {
         padding: 15em 2em;
     }
@@ -188,6 +233,9 @@ nav a:hover {
     }
     .work {
         height: 200vh;
+    }
+    form {
+        height: 90vh;
     }
 }
 
