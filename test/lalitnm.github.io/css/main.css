@@ -1,0 +1,249 @@
+@import url('../css/fonts.css');
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: raleway;
+    text-align: center;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+p {
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    width: 5rem;
+    height: 2rem;
+    background: rgb(170, 215, 221);
+    border: none;
+    border-width: .1rem;
+    border-radius: 2rem;
+}
+
+button:hover {
+    background: rgba(231, 91, 231, 0.8);
+    border: solid;
+    border-width: .1rem;
+    border-radius: 2rem;
+    border-color: white;
+}
+
+
+/*Header*/
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 1em;
+}
+
+header nav {
+    margin: 0;
+}
+
+nav ul {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 1em;
+}
+
+nav a {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: .5em;
+    background: rgb(135, 206, 235);
+}
+
+nav a:hover {
+    background: grey;
+    color: black;
+}
+
+.first-look {
+    background-image: url(../img/background.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 20em 2em;
+    color: white;
+    height: 100vh;
+}
+
+.first-look h1 {
+    font-size: 3rem;
+}
+
+.who-am-i {
+    height: 100vh;
+    background: url('../img/blurr1.jpg');
+    background-position: center;
+    padding: 7rem 1rem;
+}
+
+.who-am-i .text-box .profile {
+    height: 40vh;
+    width: 40vw;
+    float: right;
+    position: relative;
+}
+
+.work {
+    height: 100vh;
+    background: url('../img/blurr2.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 7em 1em;
+}
+
+.work .work-list li {
+    display: inline-block;
+    height: 40px;
+    width: 180px;
+}
+
+.work .work-list li p {
+    font-size: 1.5em;
+}
+
+
+/*Form*/
+
+.contact h1 {
+    padding: 10vh;
+}
+
+form {
+    height: 80vh;
+    background: rgba(231, 91, 231, 0.8);
+    padding: 10vh 10vw;
+}
+
+form .details {
+    display: inline-block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0.25em;
+    border: solid 1px rgba(255, 255, 255, 0.15);
+    width: 100%;
+    height: 5vh;
+    color: gray;
+    font-weight: 700;
+}
+
+label {
+    color: #ffffff;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 0 0 0.7em 0;
+    display: block;
+    font-size: 1.5em;
+}
+
+.contact .links {
+    height: 35vh;
+    background: grey;
+}
+
+.contact .links p {
+    margin: 0;
+    padding: 3rem;
+}
+
+.contact a {
+    font-size: 2rem;
+    color: rgb(88, 83, 83);
+}
+
+.contact a:hover {
+    color: black;
+}
+
+.contact a {
+    padding: 1rem;
+}
+
+.copyright {
+    height: 10vh;
+    padding-top: 2rem;
+    padding-bottom: 0;
+    background: grey;
+}
+
+.copyright h3 {
+    margin: 0;
+    margin-left: 1rem;
+    text-align: left;
+}
+
+@media only screen and (max-width:435px) {
+    .first-look {
+        padding: 13em 2em;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    nav a {
+        background: rgba(135, 206, 235, 0.3);
+        color: white;
+    }
+    .who-am-i {
+        height: 120vh;
+    }
+    .work {
+        height: 210vh;
+    }
+    form {
+        height: 90vh;
+    }
+    .contact .links {
+        height: 55vh;
+        background: grey;
+    }
+    .contact a {
+        font-size: 1.5rem;
+    }
+}
