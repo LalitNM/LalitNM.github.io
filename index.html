@@ -4,102 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/all.css">
-    <title>Lalit Narayan Mudgal</title>
+    <title>LalitNM's github page</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- overriding css -->
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar">
+    <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top shadow">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <header>
-        <nav>
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#home">Home</a></li>
-                <li class="nav-item"><a href="#who-am-i">Who am i</a></li>
-                <li class="nav-item"><a href="#work">work</a></li>
-                <!-- <li class="nav-item"><a href="#achievements">achievements</a></li> -->
-                <li class="nav-item"><a href="#contact">Contact</a></li>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
             </ul>
-        </nav>
-    </header>
-    <section class="first-look" id='home'>
-        <h1>Hi! I am Lalit Narayan. Welcome to my github page.</h1>
-    </section>
-    <section class="who-am-i" id='who-am-i'>
-        <div class="text-box">
-            <h1 class="title">WHO AM I</h1>
-            <p>I am a first year undergraduate student at Indian Institute of Technology Mandi majoring in Biological Engineering. My interest areas include Deep Learning, Bioinformatics, Systems Biology, Data Science.</p>
         </div>
-    </section>
-    <section class="work" id='work'>
-        <h1>MY work</h1>
-        <ul class="work-list">
-            <!--work-item-1-->
-            <li>
-                <h4>Coordinated <strong><a href="https://astrax.in/events/enigma">Enigma</a></strong></h4>
-                <p>Co-ordinated Enigma in AstraX'20</p>
-            </li>
-            <!--work-item-2-->
-            <li>
-                <h4>Publicised <strong><a href="https://astrax.in/">AstraX</a></strong></h4>
-                <p>Worked for publicity team of AstraX</p>
-            </li>
-            <!--work-item-3-->
-            <li>
-                <h4>Won URI competition</h4>
-                <p>Won URI competition organised by <strong><a href="https://pc.iitmandi.co.in">Kamand
-                            Prompt</a></strong></p>
-            </li>
-            <!--work-item-4-->
-            <li>
-                <h4>Learnt DL</h4>
-                <p>Learnt DL in winter vacations of first semester</p>
-            </li>
-        </ul>
-    </section>
-    <section id='contact'>
-        <form action="https://formspree.io/xpzjkbpk" method="POST">
-            <h1>Contact form</h1>
-            <ul class="details">
-                <li>
-                    <label>
-                        Your Name:
-                        <input type="text" name="name">
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        Your Email:
-                        <input type="text" name="email">
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        Message:
-                        <textarea name="message"></textarea>
-                    </label>
-                </li>
-                <li><button type="submit">Send</button></li>
-            </ul>
-        </form>
-    </section>
-    <section class='contact'>
-        <div class="links">
-            <p>For any query or suggestion feel free to contact me by following ways.</p>
-            <div class="contact-link">
-                <a href="https://github.com/LalitNM"><i class="fab fa-github"></i></a>
-                <a href="https://gitlab.com/LalitNM/"><i class="fab fa-gitlab"></i></a>
-                <a href="https://www.linkedin.com/in/lalit-mudgal-741788191/"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:mudgalrpvv@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://facebook.com/universephile"><i class="fab fa-facebook"></i></a>
-                <a href="https://instagram.com/lalitnarayanmudgal"><i class="fab fa-instagram"></i></a>
+    </nav>
+    <button onclick="ScrollToTop()" id="BackToTop" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+    <!-- Home -->
+    <div id="home" class="container shadow-lg pb-5">
+        <div style="height: 5vh;"></div>
+        <img src="assets/images/avatar.png" alt="avatar" class="rounded-circle avatar mx-auto d-block">
+        <h2 class="text-center pt-3">Lalit Narayan</h2>
+        <h3 class="text-center pt-3">Undergraduate student at <br> <a href="https://iitmandi.ac.in">Indian Institute Of Technology</a></h3>
+        <div class="container">
+            <div class="follow-list text-center">
+                <a href="https://github.com/LalitNM" class="ml-1 mr-1 follow-link"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/lalit-mudgal-741788191/" class="ml-1 mr-1 follow-link"><i class="fa fa-linkedin"></i></a>
+                <a href="mailto:lalitrpvv@gmail.com" class="ml-1 mr-1 follow-link"><i class="fa fa-envelope"></i></a>
+                <a href="https://facebook.com/universephile" class="ml-1 mr-1 follow-link"><i class="fa fa-facebook"></i></a>
             </div>
         </div>
-    </section>
-    <section class="copyright">
-        <h3>&copy; 2020 <strong><a href="https://github.com/LalitNM">Lalit Narayan</a></strong> All Rights Reserved
-        </h3>
-    </section>
+        <div class="d-flex justify-content-center pt-4"><a href="#about" class="btn"><i class="fa fa-chevron-down"></i></a></div>
+    </div>
+
+    <!-- About -->
+    <div id="about" class="container shadow-lg pb-5">
+        <h1 class="heading text-center">About</h1>
+        <h2 class="text-center pt-5">I am first year undergraduate student at Indian Institute of Technology. I am majoring in Biological Engineering. My research interests includes Bio-informatics, Synthetic Biology, Astromony, Astrobiology.</h2>
+    </div>
+
+    <!-- Experience -->
+    <div id="Experience" class="container shadow-lg pb-5">
+        <h1 class="heading text-center">Experience</h1>
+        <div class="row d-flex justify-content-center">
+            <div class="card col-lg-3 m-4 shadow">
+                <div class="card-body text-center">
+                    <h4 class="card-heading">Enigma</h4>
+                    <p class="card-text">I along with Prajwal Sood co-ordinated "Enigma: The Hive Hour Hackathon" in AstraX'20.</p>
+                </div>
+            </div>
+            <div class="card col-lg-3 m-4 shadow">
+                <div class="card-body text-center">
+                    <h4 class="card-heading">AstraX</h4>
+                    <p class="card-text">I worked for publicity team of AstraX'20 to publicise the event. as a result more than 100 students from all over India came to IIT Mandi.</p>
+                </div>
+            </div>
+            <div class="card col-lg-3 m-4 shadow">
+                <div class="card-body text-center">
+                    <h4 class="card-heading">URI Competition</h4>
+                    <p class="card-text">Kamand Prompt(The programming club of IIT Mandi) organised a month long coding event in August. I secured first position in my branch in the event.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="container shadow-lg pb-5">
+
+        <h1 class="heading text-center">Contact</h1>
+        <div class="row">
+            <div class="col-sm-6">
+                <form action="https://formspree.io/xpzjkbpk" method="POST">
+                    <h3 class="heading">Contact Form</h3>
+                    <input type="text" class="form-control mt-3" placeholder="Name" name="name">
+                    <input type="text" class="form-control mt-3" placeholder="Email" name="email">
+                    <textarea class="form-control mt-3" placeholder="Message" name="message"></textarea>
+                    <div class="d-flex justify-content-center mt-3">
+                        <button type="submit" class="btn">Send</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-6 pt-5">
+                <h5>For faster response drop an email at
+                    <a href="mailto:lalitrpvv@gmail.com">lalitrpvv@gmail.com</a> or text me on <a href="https://facebook.com/universephile">Facebook</a>.</h5>
+            </div>
+        </div>
+    </div>
+    <div class="copyright text-right pr-3">
+        <h6>&copy; 2020
+            <a href="https://github.com/LalitNM/">Lalit Narayan </a> All Rights Reserved</h6>
+    </div>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

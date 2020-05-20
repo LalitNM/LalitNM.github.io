@@ -1,0 +1,95 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: royalblue;
+}
+
+
+/* ---------------Global Classes---------------- */
+
+.heading {
+    color: rgb(255, 255, 255);
+    padding-top: 3rem;
+}
+
+.btn {
+    border-color: rgb(47, 56, 141);
+    border-width: 1px;
+    height: 40px;
+    width: 100px;
+}
+
+.btn:hover {
+    border-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(167, 202, 255);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(44, 49, 119);
+}
+
+
+/* ----x-----x----Global Classes--x------x------ */
+
+nav {
+    background-color: rgb(21, 31, 65);
+    opacity: 0.5;
+}
+
+.navbar-nav>li>a::after {
+    content: "|";
+    padding: 0 5px;
+}
+
+#home {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.avatar {
+    height: 200px;
+    width: 200px;
+}
+
+.follow-list {
+    font-size: 2rem;
+}
+
+#about {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+#Experience {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.card {
+    background-color: rgb(118, 116, 255);
+}
+
+#contact {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+#BackToTop {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    z-index: 999;
+    color: black;
+    right: 1vw;
+    bottom: 2vh;
+    background-color: rgb(136, 74, 236);
+}
