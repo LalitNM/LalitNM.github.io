@@ -3,9 +3,8 @@ html {
 }
 
 body {
-    background-color: royalblue;
+    background-color: rgba(65, 105, 225, 0.9);
 }
-
 
 /* ---------------Global Classes---------------- */
 
@@ -35,17 +34,36 @@ a:hover {
     color: rgb(44, 49, 119);
 }
 
-
 /* ----x-----x----Global Classes--x------x------ */
 
-nav {
-    background-color: rgb(21, 31, 65);
-    opacity: 0.5;
+#sidebar {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    top: 0;
+    left: -250px;
+    transition: .5s;
+    z-index: 800;
 }
 
-.navbar-nav>li>a::after {
-    content: "|";
-    padding: 0 5px;
+.navbar {
+    width: 250px;
+    height: 100%;
+    background-color: rgba(83, 56, 236, 0.9);
+    padding: 2rem;
+}
+
+.sidebar-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(65, 105, 225, 1.0);
+    position: fixed;
+    z-index: 999;
+    width: 50px;
+    top: 5px;
+    left: 5px;
 }
 
 #home {
@@ -91,5 +109,5 @@ nav {
     color: black;
     right: 1vw;
     bottom: 2vh;
-    background-color: rgb(136, 74, 236);
+    background-color: rgb(74, 77, 236);
 }

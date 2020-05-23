@@ -9,8 +9,8 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
     <!-- Font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,52 +19,55 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar">
-    <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top shadow">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+<body onscroll="HideNav()">
+    <div id="sidebar">
+        <div class="navbar">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                <li class="nav-item"> <a class="nav-link" href="#about">About</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Experience">Experience</a>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
-    </nav>
+        <div>
+            <button class="sidebar-btn" onclick="SidebarToggle()">
+                <i class="fa fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
     <button onclick="ScrollToTop()" id="BackToTop" title="Go to top"><i class="fa fa-chevron-up"></i></button>
     <!-- Home -->
     <div id="home" class="container shadow-lg pb-5">
         <div style="height: 5vh;"></div>
         <img src="assets/images/avatar.png" alt="avatar" class="rounded-circle avatar mx-auto d-block">
         <h2 class="text-center pt-3">Lalit Narayan</h2>
-        <h3 class="text-center pt-3">Undergraduate student at <br> <a href="https://iitmandi.ac.in">Indian Institute Of Technology</a></h3>
+        <h3 class="text-center pt-3">Undergraduate student at <br> <a href="https://iitmandi.ac.in">Indian Institute Of
+                Technology</a></h3>
         <div class="container">
             <div class="follow-list text-center">
                 <a href="https://github.com/LalitNM" class="ml-1 mr-1 follow-link"><i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/lalit-mudgal-741788191/" class="ml-1 mr-1 follow-link"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/lalit-mudgal-741788191/" class="ml-1 mr-1 follow-link"><i
+                        class="fa fa-linkedin"></i></a>
                 <a href="mailto:lalitrpvv@gmail.com" class="ml-1 mr-1 follow-link"><i class="fa fa-envelope"></i></a>
-                <a href="https://facebook.com/universephile" class="ml-1 mr-1 follow-link"><i class="fa fa-facebook"></i></a>
+                <a href="https://facebook.com/universephile" class="ml-1 mr-1 follow-link"><i
+                        class="fa fa-facebook"></i></a>
             </div>
         </div>
-        <div class="d-flex justify-content-center pt-4"><a href="#about" class="btn"><i class="fa fa-chevron-down"></i></a></div>
+        <div class="d-flex justify-content-center pt-4"><a href="#about" class="btn"><i
+                    class="fa fa-chevron-down"></i></a></div>
     </div>
 
     <!-- About -->
     <div id="about" class="container shadow-lg pb-5">
         <h1 class="heading text-center">About</h1>
-        <h2 class="text-center pt-5">I am first year undergraduate student at Indian Institute of Technology. I am majoring in Biological Engineering. My research interests includes Bio-informatics, Synthetic Biology, Astromony, Astrobiology.</h2>
+        <h2 class="text-center pt-5">I am first year undergraduate student at Indian Institute of Technology. I am
+            majoring in Biological Engineering. My research interests includes Bio-informatics, Synthetic Biology,
+            Astromony, Astrobiology.</h2>
     </div>
 
     <!-- Experience -->
@@ -74,19 +77,22 @@
             <div class="card col-lg-3 m-4 shadow">
                 <div class="card-body text-center">
                     <h4 class="card-heading">Enigma</h4>
-                    <p class="card-text">I along with Prajwal Sood co-ordinated "Enigma: The Hive Hour Hackathon" in AstraX'20.</p>
+                    <p class="card-text">I along with Prajwal Sood co-ordinated "Enigma: The Hive Hour Hackathon" in
+                        AstraX'20.</p>
                 </div>
             </div>
             <div class="card col-lg-3 m-4 shadow">
                 <div class="card-body text-center">
                     <h4 class="card-heading">AstraX</h4>
-                    <p class="card-text">I worked for publicity team of AstraX'20 to publicise the event. as a result more than 100 students from all over India came to IIT Mandi.</p>
+                    <p class="card-text">I worked for publicity team of AstraX'20 to publicise the event. as a result
+                        more than 100 students from all over India came to IIT Mandi.</p>
                 </div>
             </div>
             <div class="card col-lg-3 m-4 shadow">
                 <div class="card-body text-center">
                     <h4 class="card-heading">URI Competition</h4>
-                    <p class="card-text">Kamand Prompt(The programming club of IIT Mandi) organised a month long coding event in August. I secured first position in my branch in the event.</p>
+                    <p class="card-text">Kamand Prompt(The programming club of IIT Mandi) organised a month long coding
+                        event in August. I secured first position in my branch in the event.</p>
                 </div>
             </div>
         </div>
@@ -110,7 +116,8 @@
             </div>
             <div class="col-sm-6 pt-5">
                 <h5>For faster response drop an email at
-                    <a href="mailto:lalitrpvv@gmail.com">lalitrpvv@gmail.com</a> or text me on <a href="https://facebook.com/universephile">Facebook</a>.</h5>
+                    <a href="mailto:lalitrpvv@gmail.com">lalitrpvv@gmail.com</a> or text me on <a
+                        href="https://facebook.com/universephile">Facebook</a>.</h5>
             </div>
         </div>
     </div>
