@@ -33,24 +33,30 @@ a:hover {
     text-decoration: none;
     color: rgb(44, 49, 119);
 }
+/* to remove unnecessary outline on a button when it is pressed*/
+:focus {
+    outline: none !important;
+    color: black;
+}
 
 /* ----x-----x----Global Classes--x------x------ */
 
 #sidebar {
     position: fixed;
     height: 100%;
-    width: 300px;
+    width: 310px;
     top: 0;
     left: -250px;
     transition: .5s;
     z-index: 800;
 }
 
-.navbar {
-    width: 250px;
+.sidebar {
+    width: 260px;
     height: 100%;
     background-color: rgba(83, 56, 236, 0.9);
     padding: 2rem;
+    padding-top: 3rem;
 }
 
 .sidebar-btn {
@@ -59,11 +65,8 @@ a:hover {
     border: none;
     border-radius: 5px;
     background-color: rgb(65, 105, 225, 1.0);
-    position: fixed;
-    z-index: 999;
-    width: 50px;
-    top: 5px;
-    left: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 #home {
@@ -108,6 +111,6 @@ a:hover {
     z-index: 999;
     color: black;
     right: 1vw;
-    bottom: 2vh;
+    bottom: 1vh;
     background-color: rgb(74, 77, 236);
 }

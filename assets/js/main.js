@@ -1,9 +1,14 @@
+// Back To Top
+
 function ScrollToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+// SideBar
+
+const navbar = document.getElementById('sidebar');
+
 function SidebarToggle() {
-    var navbar = document.getElementById('sidebar');
     if (navbar.style.left == '0px') {
         navbar.style.left = '-250px';
         var toggle = document.getElementsByClassName('fa-arrow-left')[0];
@@ -18,12 +23,16 @@ function SidebarToggle() {
     }
 }
 function HideNav() {
-    var navbar = document.getElementById('sidebar');
-    if (window.pageYOffset > 0) {
+    if (navbar.style.left == '0px') {
         navbar.style.left = '-250px';
-
         var toggle = document.getElementsByClassName('fa-arrow-left')[0];
         toggle.className = '';
         toggle.className += 'fa fa-arrow-right';
     }
 }
+
+$(document).on('click', function (event) {
+    if (!$(event.target).closest('#sidebar').length) {
+      HideNav()
+    }
+  });
