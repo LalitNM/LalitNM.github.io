@@ -1,121 +1,122 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background: #E3DFD2;
-    box-shadow: inset 0 0 20vmin 0 #585247;
-  }
+  background: #E3DFD2;
+  box-shadow: inset 0 0 20vmin 0 #585247;
+}
 
 /* ---------------Global Classes---------------- */
-
 .heading {
-    color: rgb(0, 0, 0);
-    padding-top: 3rem;
+  color: rgb(0, 0, 0);
+  padding-top: 3rem;
 }
 
 .btn {
-    border-color: rgb(112, 112, 112);
-    border-width: 1px;
-    height: 40px;
-    width: 100px;
+  border-color: rgb(112, 112, 112);
+  border-width: 1px;
+  height: 40px;
+  width: 100px;
 }
 
 .btn:hover {
-    border-color: white;
+  border-color: white;
 }
 
 a {
-    text-decoration: none;
-    color: rgb(83, 83, 83);
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: none;
-    color: rgb(31, 31, 31);
+  text-decoration: none;
+  color: rgb(31, 31, 31);
 }
+
 /* to remove unnecessary outline on a button when it is pressed*/
 :focus {
-    outline: none !important;
-    color: black;
+  outline: none !important;
+  color: black;
 }
 
 /* ----x-----x----Global Classes--x------x------ */
-
 #sidebar {
-    position: fixed;
-    height: 100%;
-    width: 310px;
-    top: 0;
-    left: -250px;
-    transition: .5s;
-    z-index: 800;
+  position: fixed;
+  height: 100%;
+  width: 250px;
+  top: 0;
+  left: -250px;
+  transition: .5s;
+  z-index: 800;
 }
 
 .sidebar {
-    width: 260px;
-    height: 100%;
-    background-color: rgba(168, 168, 168, 0.9);
-    padding: 2rem;
-    padding-top: 3rem;
+  width: 250px;
+  height: 100%;
+  background-color: rgba(168, 168, 168, 0.9);
+  padding: 2rem;
+  padding-top: 3rem;
 }
 
 .sidebar-btn {
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(168, 168, 168);
-    margin-top: 10px;
-    margin-left: 10px;
+  position: absolute;
+  left: 250px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(168, 168, 168);
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 #home {
-    padding-top: 10vh;
-    margin-bottom: 10vh;
+  padding-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .avatar {
-    height: 200px;
-    width: 200px;
+  height: 200px;
+  width: 200px;
 }
 
 .follow-list {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 #about {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 #Experience {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .card {
-    background-color: rgb(218, 218, 218);
+  background-color: rgb(218, 218, 218);
 }
 
 #contact {
-    margin-top: 10vh;
-    margin-bottom: 9vh;
+  margin-top: 10vh;
+  margin-bottom: 9vh;
 }
 
-.copyright h6{
-    margin-bottom: 0 !important;
-    padding-bottom: .5rem;
+.copyright h6 {
+  margin-bottom: 0 !important;
+  padding-bottom: .5rem;
 }
+
 #BackToTop {
-    position: fixed;
-    height: 50px;
-    width: 50px;
-    border: none;
-    border-radius: 50%;
-    z-index: 999;
-    color: black;
-    right: 1vw;
-    bottom: 1vh;
-    background-color: rgb(168, 168, 168);
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+  z-index: 999;
+  color: black;
+  right: 1vw;
+  bottom: 1vh;
+  background-color: rgb(168, 168, 168);
 }

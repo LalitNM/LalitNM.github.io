@@ -2,124 +2,121 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LalitNM's github page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LalitNM's github page</title>
 
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-    <!-- Font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- overriding css -->
-    <link rel="stylesheet" href="assets/css/main.css">
+  <!-- overriding css -->
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body onscroll="HideNav()">
-    <div class="d-flex justify-content-center" id="sidebar">
-        <div class="sidebar">
-            <a class="nav-link" href="#home">Home</a>
-            <a class="nav-link" href="#about">About</a>
-            <a class="nav-link" href="#experience">Experience</a>
-            <a class="nav-link" href="#contact">Contact</a>
-        </div>
-        <div>
-            <button class="sidebar-btn" onclick="SidebarToggle()">
-                <i class="fa fa-arrow-right"></i>
-            </button>
-        </div>
+<body onscroll="HideNav()" onload="StudyYear()">
+  <div class="d-flex justify-content-center" id="sidebar">
+    <div class="sidebar">
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#experience">Experience</a>
+      <a class="nav-link" href="#contact">Contact</a>
     </div>
+    <div>
+      <button class="sidebar-btn" onclick="SidebarToggle()">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
 
-    <button onclick="ScrollToTop()" id="BackToTop" title="Go to top"><i class="fa fa-chevron-up"></i></button>
-    <!-- Home -->
-    <div id="home" class="container shadow-lg pb-5">
-        <div style="height: 5vh;"></div>
-        <img src="assets/images/avatar.png" alt="avatar" class="rounded-circle avatar mx-auto d-block">
-        <h2 class="text-center pt-3">Lalit Narayan</h2>
-        <h3 class="text-center pt-3">Undergraduate student at <br> <a href="https://iitmandi.ac.in">Indian Institute Of
-                Technology</a></h3>
-        <div class="container">
-            <div class="follow-list text-center">
-                <a href="https://github.com/LalitNM" class="ml-1 mr-1 follow-link"><i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/lalit-mudgal-741788191/" class="ml-1 mr-1 follow-link"><i
-                        class="fa fa-linkedin"></i></a>
-                <a href="mailto:lalitrpvv@gmail.com" class="ml-1 mr-1 follow-link"><i class="fa fa-envelope"></i></a>
-                <a href="https://facebook.com/universephile" class="ml-1 mr-1 follow-link"><i
-                        class="fa fa-facebook"></i></a>
-            </div>
+  <button onclick="ScrollToTop()" id="BackToTop" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+  <!-- Home -->
+  <div id="home" class="container shadow-lg pb-5">
+    <div style="height: 5vh;"></div>
+    <img src="assets/images/avatar.png" alt="avatar" class="rounded-circle avatar mx-auto d-block">
+    <h2 class="text-center pt-3">Lalit Narayan</h2>
+    <h3 class="text-center pt-3">Undergraduate student at <br> <a href="https://iitmandi.ac.in">Indian Institute Of
+        Technology</a></h3>
+    <div class="container">
+      <div class="follow-list text-center">
+        <a href="https://github.com/LalitNM" class="ml-1 mr-1 follow-link"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/lalit-mudgal-741788191/" class="ml-1 mr-1 follow-link"><i class="fa fa-linkedin"></i></a>
+        <a href="mailto:lalitrpvv@gmail.com" class="ml-1 mr-1 follow-link"><i class="fa fa-envelope"></i></a>
+        <a href="https://facebook.com/universephile" class="ml-1 mr-1 follow-link"><i class="fa fa-facebook"></i></a>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center pt-4"><a href="#about" class="btn"><i class="fa fa-chevron-down"></i></a></div>
+  </div>
+
+  <!-- About -->
+  <div id="about" class="container shadow-lg pb-5">
+    <h1 class="heading text-center">About</h1>
+    <h2 class="text-center pt-5">I am <span id="studyYear"></span> IIT Mandi. I am majoring in Biological Engineering. My research interests includes Bioinformatics, Synthetic Biology, Astromony, Astrobiology.</h2>
+  </div>
+
+  <!-- Experience -->
+  <div id="experience" class="container shadow-lg pb-5">
+    <h1 class="heading text-center">Experience</h1>
+    <div class="row d-flex justify-content-center">
+      <div class="card col-lg-3 m-4 shadow">
+        <div class="card-body text-center">
+          <h4 class="card-heading">STAC</h4>
+          <p class="card-text">I am currently working as coordinator of <a href='http://stac.iitmandi.co.in'>STAC</a>.</p>
         </div>
-        <div class="d-flex justify-content-center pt-4"><a href="#about" class="btn"><i
-                    class="fa fa-chevron-down"></i></a></div>
-    </div>
-
-    <!-- About -->
-    <div id="about" class="container shadow-lg pb-5">
-        <h1 class="heading text-center">About</h1>
-        <h2 class="text-center pt-5">I am first year undergraduate student at Indian Institute of Technology. I am
-            majoring in Biological Engineering. My research interests includes Bio-informatics, Synthetic Biology,
-            Astromony, Astrobiology.</h2>
-    </div>
-
-    <!-- Experience -->
-    <div id="experience" class="container shadow-lg pb-5">
-        <h1 class="heading text-center">Experience</h1>
-        <div class="row d-flex justify-content-center">
-            <div class="card col-lg-3 m-4 shadow">
-                <div class="card-body text-center">
-                    <h4 class="card-heading">Enigma</h4>
-                    <p class="card-text">I along with Prajwal Sood co-ordinated "Enigma: The Hive Hour Hackathon" in
-                        AstraX'20.</p>
-                </div>
-            </div>
-            <div class="card col-lg-3 m-4 shadow">
-                <div class="card-body text-center">
-                    <h4 class="card-heading">AstraX</h4>
-                    <p class="card-text">I worked for publicity team of AstraX'20 to publicise the event. as a result
-                        more than 100 students from all over India came to IIT Mandi.</p>
-                </div>
-            </div>
-            <div class="card col-lg-3 m-4 shadow">
-                <div class="card-body text-center">
-                    <h4 class="card-heading">URI Competition</h4>
-                    <p class="card-text">Kamand Prompt(The programming club of IIT Mandi) organised a month long coding
-                        event in August. I secured first position in my branch in the event.</p>
-                </div>
-            </div>
+      </div>
+      <div class="card col-lg-3 m-4 shadow">
+        <div class="card-body text-center">
+          <h4 class="card-heading">Enigma</h4>
+          <p class="card-text">I co-ordinated "Enigma: The Five Hour Hackathon" in <a href='https://astrax.in'>AstraX'20</a>.</p>
         </div>
-    </div>
-
-    <!-- Contact -->
-    <div id="contact" class="container shadow-lg pb-5">
-
-        <h1 class="heading text-center">Contact</h1>
-        <div class="row">
-            <div class="col-sm-6">
-                <form action="https://formspree.io/xpzjkbpk" method="POST">
-                    <h3 class="heading">Contact Form</h3>
-                    <input type="text" class="form-control mt-3" placeholder="Name" name="name">
-                    <input type="text" class="form-control mt-3" placeholder="Email" name="email">
-                    <textarea class="form-control mt-3" placeholder="Message" name="message"></textarea>
-                    <div class="d-flex justify-content-center mt-3">
-                        <button type="submit" class="btn">Send</button>
-                    </div>
-                </form>
-            </div>
-            <div class="col-sm-6 pt-5">
-                <h5>For faster response drop an email at
-                    <a href="mailto:lalitrpvv@gmail.com">lalitrpvv@gmail.com</a> or text me on <a
-                        href="https://facebook.com/universephile">Facebook</a>.</h5>
-            </div>
+      </div>
+      <div class="card col-lg-3 m-4 shadow">
+        <div class="card-body text-center">
+          <h4 class="card-heading">AstraX</h4>
+          <p class="card-text">I worked for publicity team of AstraX'20 to publicise the fest. As a result more than 100 students from all over India came to IIT Mandi.</p>
         </div>
+      </div>
+      <div class="card col-lg-3 m-4 shadow">
+        <div class="card-body text-center">
+          <h4 class="card-heading">URI Competition</h4>
+          <p class="card-text">Kamand Prompt(The programming club of IIT Mandi) organised a month long coding event in August. I secured first position in my branch in the event.</p>
+        </div>
+      </div>
     </div>
-    <div class="copyright text-right pr-3">
-        <h6>&copy; 2020
-            <a href="https://github.com/LalitNM/">Lalit Narayan </a> All Rights Reserved</h6>
+  </div>
+
+  <!-- Contact -->
+  <div id="contact" class="container shadow-lg pb-5">
+
+    <h1 class="heading text-center">Contact</h1>
+    <div class="row">
+      <div class="col-sm-6">
+        <form action="https://formspree.io/xpzjkbpk" method="POST">
+          <h3 class="heading">Contact Form</h3>
+          <input type="text" class="form-control mt-3" placeholder="Name" name="name">
+          <input type="text" class="form-control mt-3" placeholder="Email" name="email">
+          <textarea class="form-control mt-3" placeholder="Message" name="message"></textarea>
+          <div class="d-flex justify-content-center mt-3">
+            <button type="submit" class="btn">Send</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-6 pt-5">
+        <h5>For fastest response drop an email at <a href="mailto:lalitrpvv@gmail.com">lalitrpvv@gmail.com</a> or text me on <a href="https://facebook.com/universephile">Facebook</a>.</h5>
+      </div>
     </div>
-    <script src="assets/js/main.js"></script>
+  </div>
+  <div class="copyright text-right pr-3"> &copy; <script>
+      document.write(new Date().getFullYear());
+    </script>.
+    <a href="https://github.com/LalitNM/">Lalit Narayan </a> All Rights Reserved
+  </div>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
