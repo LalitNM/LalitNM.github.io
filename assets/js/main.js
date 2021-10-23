@@ -9,42 +9,24 @@ const navbar = document.getElementById('sidebar');
 function SidebarToggle() {
 	if (navbar.style.left == '0px') {
 		navbar.style.left = '-250px';
-		var toggle = document.getElementsByClassName('fa-arrow-left')[0];
+		var toggle = document.getElementsByClassName('bi-chevron-left')[0];
 		toggle.className = '';
-		toggle.className += 'fa fa-arrow-right';
+		toggle.className += 'bi bi-chevron-right';
 	} else {
 		navbar.style.left = '0px';
-		var toggle = document.getElementsByClassName('fa-arrow-right')[0];
+		var toggle = document.getElementsByClassName('bi-chevron-right')[0];
 		toggle.className = '';
-		toggle.className += 'fa fa-arrow-left';
+		toggle.className += 'bi bi-chevron-left';
 	}
 }
 
 function HideNav() {
 	if (navbar.style.left == '0px') {
 		navbar.style.left = '-250px';
-		var toggle = document.getElementsByClassName('fa-arrow-left')[0];
+		var toggle = document.getElementsByClassName('bi-chevron-left')[0];
 		toggle.className = '';
-		toggle.className += 'fa fa-arrow-right';
+		toggle.className += 'bi bi-chevron-right';
 	}
-}
-// update the currrent state (where I am studying)
-function StudyYear() {
-	var d = new Date();
-	year = d.getFullYear();
-	month = d.getMonth();
-	numbers = ['first', 'second', 'third', 'forth']
-	states = ['undergraduate', 'postgraduate']
-	if (month > 5 && year < 2022) {
-		state = numbers[(year - 2019)] + ' year ' + states[0] + ' student at';
-	} else if (month <= 5 && year <= 2022) {
-		state = numbers[(year - 2019) - 1] + ' year ' + states[0] + ' student at';
-	} else if (year >= 2022 && year <= 2024) {
-		state = states[1] + ' student at';
-	} else {
-		state = 'postgraduate from';
-	}
-	document.getElementById('studyYear').innerText = state;
 }
 $(document).on('click', function (event) {
 	if (!$(event.target).closest('#sidebar').length) {

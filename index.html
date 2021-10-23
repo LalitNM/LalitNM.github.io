@@ -5,62 +5,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LalitNM's github page</title>
-
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-  <!-- Font-awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <!-- overriding css -->
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body onscroll="HideNav()" onload="StudyYear()">
-  <div class="d-flex justify-content-center" id="sidebar">
-    <div class="sidebar">
-      <a class="nav-link" href="#home">Home</a>
-      <a class="nav-link" href="#about">About</a>
-      <a class="nav-link" href="#experience">Experience</a>
-      <a class="nav-link" href="#contact">Contact</a>
+<body onscroll="HideNav()">
+  <div class=" d-flex justify-content-center" id="sidebar">
+    <div class="sidebar shadow">
+      <a class="nav-link" onclick="document.getElementById('home').scrollIntoView()">Home & Biography</a>
+      <a class="nav-link" onclick="document.getElementById('experience').scrollIntoView()">Experience</a>
+      <a class="nav-link" onclick="document.getElementById('contact').scrollIntoView()">Contact</a>
     </div>
     <div>
-      <button class="sidebar-btn" onclick="SidebarToggle()">
-        <i class="fa fa-arrow-right"></i>
+      <button class="sidebar-btn shadow" onclick="SidebarToggle()">
+        <i class="bi bi-chevron-right"></i>
       </button>
     </div>
   </div>
-
-  <button onclick="ScrollToTop()" id="BackToTop" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+  <button onclick="ScrollToTop()" id="BackToTop" title="Go to top"><i class="bi bi-chevron-up"></i></button>
   <!-- Home -->
-  <div id="home" class="container shadow-lg pb-5">
-    <div style="height: 5vh;"></div>
-    <img src="assets/images/avatar.png" alt="avatar" class="rounded-circle avatar mx-auto d-block">
-    <h2 class="text-center pt-3">Lalit Narayan</h2>
-    <h3 class="text-center pt-3">Undergraduate student at <br> <a href="https://iitmandi.ac.in">Indian Institute Of
-        Technology</a></h3>
-    <div class="container">
+  <div id="home" class="pb-5x row">
+    <div class="col-md-6">
+      <img src="assets/images/avatar.png" alt="avatar" class="rounded-circle avatar mx-auto d-block mt-5">
+      <h2 class="text-center pt-3">Lalit Narayan Mudgal</h2>
+      <p class="text-center pt-3">Bioengineering Undergraduate<br> <a href="https://iitmandi.ac.in" target="_blank">IIT Mandi</a></p>
       <div class="follow-list text-center">
-        <a href="https://github.com/LalitNM" class="ml-1 mr-1 follow-link"><i class="fa fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/lalit-mudgal-741788191/" class="ml-1 mr-1 follow-link"><i class="fa fa-linkedin"></i></a>
-        <a href="mailto:lalitrpvv@gmail.com" class="ml-1 mr-1 follow-link"><i class="fa fa-envelope"></i></a>
-        <a href="https://facebook.com/universephile" class="ml-1 mr-1 follow-link"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/AKAstrophile" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-twitter"></i></a>
+        <a href="https://github.com/LalitNM" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/lalitnm/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:lalitrpvv@gmail.com" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-envelope"></i></a>
       </div>
     </div>
-    <div class="d-flex justify-content-center pt-4"><a href="#about" class="btn"><i class="fa fa-chevron-down"></i></a></div>
+    <div class="col-md-6">
+      <h1 class="text-center my-4">Biography</h1>
+      <p class="p-4">
+        <b><i>I am a biologist who likes to code!</i></b>
+        <br><br>I am studying B.Tech.-M.Tech. Dual Degree in Bioengineering at IIT Mandi. My areas of interest are <b>Astrobiology</b>, <b>Evolution</b>, <b>Origin of Life</b> and <b>Artifiial Life</b>. I have experience in <b>Bioinformatics</b>,
+        <b>Synthetic Biology</b> and <b>Biotechnology</b>. I started my B.Tech. here at IIT Mandi in 2019. In my third year of dual degree program, I chose <b>Computational Bioengineering</b> as my specialization. I have done quite a few projects in
+        past. I also have experience in Volunteering and Team Leading. I had been Leader Coordinator at <a href="https://stac.iitmandi.co.in" target="_blank">Space Technology and Astronomy Cell, IIT Mandi</a>. I am also founding member of
+        Bioengineering club here at IIT Mandi. <br><br><br>
+        <b><i>"May the sky remains clear!"</i></b>
+      </p>
+    </div>
   </div>
-
-  <!-- About -->
-  <div id="about" class="container shadow-lg pb-5">
-    <h1 class="heading text-center">About</h1>
-    <h2 class="text-center pt-5">I am <span id="studyYear"></span> IIT Mandi. I am majoring in Biological Engineering. My research interests includes Bioinformatics, Synthetic Biology, Astromony, Astrobiology.</h2>
-  </div>
-
   <!-- Experience -->
-  <div id="experience" class="container shadow-lg pb-5">
+  <div id="experience" class="pb-5">
     <h1 class="heading text-center">Experience</h1>
     <div class="row d-flex justify-content-center">
       <div class="card col-lg-3 m-4 shadow">
@@ -89,13 +85,11 @@
       </div>
     </div>
   </div>
-
   <!-- Contact -->
-  <div id="contact" class="container shadow-lg pb-5">
-
+  <div id="contact">
     <h1 class="heading text-center">Contact</h1>
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-6 px-5">
         <form action="https://formspree.io/xpzjkbpk" method="POST">
           <h3 class="heading">Contact Form</h3>
           <input type="text" class="form-control mt-3" placeholder="Name" name="name">
@@ -106,15 +100,32 @@
           </div>
         </form>
       </div>
-      <div class="col-sm-6 pt-5">
-        <h5>For fastest response drop an email at <a href="mailto:lalitrpvv@gmail.com">lalitrpvv@gmail.com</a> or text me on <a href="https://facebook.com/universephile">Facebook</a>.</h5>
+      <div class="col-sm-6 px-5 pt-5">
+        <p><i class="bi bi-telephone" aria-hidden="true"></i>
+          <a href="tel:+919990991108"> +91 999 099 1108</a>
+        </p>
+        <p><i class="bi bi-map" aria-hidden="true"></i> Lalit Narayan Mudgal (B19012), Surajtaal Hostel, North Campus, IIT Mandi, Himachal Pradesh, India, PIN - 175075 </p>
       </div>
     </div>
   </div>
-  <div class="copyright text-right pr-3"> &copy; <script>
-      document.write(new Date().getFullYear());
-    </script>.
-    <a href="https://github.com/LalitNM/">Lalit Narayan </a> All Rights Reserved
+  <div id="footer" class="">
+    <div class="follow-list text-center">
+      <a href="https://twitter.com/AKAstrophile" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-twitter"></i></a>
+      <a href="https://github.com/LalitNM" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/lalitnm/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-linkedin"></i></a>
+      <a href="mailto:lalitrpvv@gmail.com" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-envelope"></i></a>
+      <a href="https://www.instagram.com/AKAstrophile/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.facebook.com/universephile/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-facebook"></i></a>
+      <!-- <a href="https://vimeo.com/user151744469/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-vimeo"></i></a>
+      <a href="https://www.behance.net/lalitmudgal/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-behance"></i></a>
+      <a href="https://www.bandlab.com/lalitnm/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-bandlab"></i></a> -->
+    </div>
+    <div class="copyright text-right">
+      <p> &copy; <script>
+          document.write(new Date().getFullYear());
+
+        </script><a href="https://github.com/LalitNM/" target="_blank"> Lalit Narayan </a> All Rights Reserved.</p>
+    </div>
   </div>
   <script src="assets/js/main.js"></script>
 </body>
