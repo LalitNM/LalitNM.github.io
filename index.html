@@ -29,7 +29,7 @@
       </button>
     </div>
   </div>
-  <button onclick="ScrollToTop()" id="BackToTop" title="Go to top"><i class="bi bi-chevron-up"></i></button>
+  <button onclick="ScrollToTop()" id="BackToTop" class="shadow" title="Go to top"><i class="bi bi-chevron-up"></i></button>
   <!-- Home -->
   <div id="home" class="pb-5x row">
     <div class="col-md-6">
@@ -55,8 +55,9 @@
       </p>
     </div>
   </div>
+  <hr>
   <!-- Experience -->
-  <div id="experience" class="pb-5">
+  <div id="experience">
     <h1 class="heading text-center">Experience</h1>
     <div class="row d-flex justify-content-center">
       <div class="card col-lg-3 m-4 shadow">
@@ -86,45 +87,67 @@
     </div>
   </div>
   <!-- Contact -->
-  <div id="contact">
-    <h1 class="heading text-center">Contact</h1>
+  <div id="contact" class="text-white pt-5">
     <div class="row">
-      <div class="col-sm-6 px-5">
+      <div class="col-sm-4 px-5">
         <form action="https://formspree.io/xpzjkbpk" method="POST">
-          <h3 class="heading">Contact Form</h3>
+          <h3 class="heading text-center">Contact Form</h3>
           <input type="text" class="form-control mt-3" placeholder="Name" name="name">
           <input type="text" class="form-control mt-3" placeholder="Email" name="email">
           <textarea class="form-control mt-3" placeholder="Message" name="message"></textarea>
           <div class="d-flex justify-content-center mt-3">
-            <button type="submit" class="btn">Send</button>
+            <button type="submit" class="btn text-white">Send</button>
           </div>
         </form>
       </div>
-      <div class="col-sm-6 px-5 pt-5">
-        <p><i class="bi bi-telephone" aria-hidden="true"></i>
-          <a href="tel:+919990991108"> +91 999 099 1108</a>
-        </p>
-        <p><i class="bi bi-map" aria-hidden="true"></i> Lalit Narayan Mudgal (B19012), Surajtaal Hostel, North Campus, IIT Mandi, Himachal Pradesh, India, PIN - 175075 </p>
+      <div class="col-sm-4 px-5">
+        <h3 class="heading text-center">Contact Info</h3>
+        <div class="row">
+          <div class="col-2" style="font-size: 2rem">
+            <p><i class="bi bi-telephone" aria-hidden="true"></i></p>
+          </div>
+          <div class="col-10 pt-3">
+            <p> <a href="tel:+919990991108"> +91 999 099 1108</a></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2" style="font-size: 2rem">
+            <p><i class="bi bi-map" aria-hidden="true"></i></p>
+          </div>
+          <div class="col-10">
+            <p> Lalit Narayan Mudgal (B19012), Surajtaal Hostel, North Campus, IIT Mandi, Himachal Pradesh, India, PIN - 175075</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2" style="font-size: 2rem">
+            <p><i class="bi bi-at" aria-hidden="true"></i></p>
+          </div>
+          <div class="col-10">
+            <p> <a href="mailto:lalitrpvv@gmail.com">lalitrpvv@gmail.com</a> <br> <a href="mailto:B19012@students.iitmandi.ac.in">B19012@students.iitmandi.ac.in</a> </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 px-5">
+        <h3 class="heading text-center">Social Links</h3>
+        <div class="follow-list text-center">
+          <a href="https://twitter.com/AKAstrophile" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-twitter"></i></a>
+          <a href="https://github.com/LalitNM" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/lalitnm/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-linkedin"></i></a>
+          <a href="mailto:lalitrpvv@gmail.com" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-envelope"></i></a>
+          <br>
+          <a href="https://www.instagram.com/AKAstrophile/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com/universephile/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-facebook"></i></a>
+          <!-- <a href="https://vimeo.com/user151744469/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-vimeo"></i></a>
+          <a href="https://www.behance.net/lalitmudgal/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-behance"></i></a>
+          <a href="https://www.bandlab.com/lalitnm/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-bandlab"></i></a> -->
+        </div>
       </div>
     </div>
-  </div>
-  <div id="footer" class="">
-    <div class="follow-list text-center">
-      <a href="https://twitter.com/AKAstrophile" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-twitter"></i></a>
-      <a href="https://github.com/LalitNM" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-github"></i></a>
-      <a href="https://www.linkedin.com/in/lalitnm/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-linkedin"></i></a>
-      <a href="mailto:lalitrpvv@gmail.com" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-envelope"></i></a>
-      <a href="https://www.instagram.com/AKAstrophile/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-instagram"></i></a>
-      <a href="https://www.facebook.com/universephile/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-facebook"></i></a>
-      <!-- <a href="https://vimeo.com/user151744469/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-vimeo"></i></a>
-      <a href="https://www.behance.net/lalitmudgal/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-behance"></i></a>
-      <a href="https://www.bandlab.com/lalitnm/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-bandlab"></i></a> -->
-    </div>
-    <div class="copyright text-right">
+    <div class="copyright text-center mt-2 pb-2">
       <p> &copy; <script>
           document.write(new Date().getFullYear());
 
-        </script><a href="https://github.com/LalitNM/" target="_blank"> Lalit Narayan </a> All Rights Reserved.</p>
+        </script><a href="https://github.com/LalitNM/" target="_blank"> Lalit Narayan Mudgal</a>, All Rights Reserved.</p>
     </div>
   </div>
   <script src="assets/js/main.js"></script>
