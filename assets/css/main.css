@@ -11,17 +11,6 @@ body {
 }
 
 /* ---------------Global Classes---------------- */
-.btn {
-  border-color: rgb(112, 112, 112);
-  border-width: 1px;
-  height: 40px;
-  width: 100px;
-}
-
-.btn:hover {
-  border-color: white;
-}
-
 a {
   text-decoration: none;
   cursor: pointer;
