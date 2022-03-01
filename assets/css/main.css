@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background: rgb(255, 255, 255);
+  background: rgb(211, 211, 211);
   text-align: justify;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -41,7 +41,7 @@ a:hover {
 .sidebar {
   width: 250px;
   height: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(211, 211, 211);
   padding: 2rem;
   padding-top: 3rem;
 }
@@ -53,7 +53,7 @@ a:hover {
   height: 50px;
   border: none;
   border-radius: 5px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(211, 211, 211);
   margin-top: 10px;
   margin-left: 10px;
 }
@@ -98,4 +98,12 @@ a:hover {
   z-index: 999;
   right: 1vw;
   bottom: 1vh;
+}
+
+.card {
+  background-color: rgb(230, 230, 230)
+}
+
+.highlighted-card {
+  background-color: rgb(255, 215, 100);
 }
