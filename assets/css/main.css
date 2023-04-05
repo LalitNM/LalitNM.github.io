@@ -4,7 +4,9 @@ html {
 }
 
 body {
-  background: rgb(211, 211, 211);
+  background: url('../background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: justify;
   overflow-x: hidden;
   overflow-y: hidden;
