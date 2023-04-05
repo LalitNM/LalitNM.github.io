@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LalitNM's github page</title>
+  <title>Lalit N. Mudgal</title>
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -14,47 +14,34 @@
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body onscroll="HideNav()">
-  <div class=" d-flex justify-content-center" id="sidebar">
-    <div class="sidebar">
-      <a class="nav-link" onclick="document.getElementById('home').scrollIntoView()">Home & Biography</a>
-      <a class="nav-link" onclick="document.getElementById('experience').scrollIntoView()">Experience</a>
-      <a class="nav-link" onclick="document.getElementById('projects').scrollIntoView()">Projects</a>
-      <a class="nav-link" onclick="document.getElementById('achievements').scrollIntoView()">Achievements</a>
-      <a class="nav-link" onclick="document.getElementById('contact').scrollIntoView()">Contact</a>
-    </div>
-    <div>
-      <button class="sidebar-btn shadow" onclick="SidebarToggle()">
-        <i class="bi bi-chevron-right"></i>
-      </button>
-    </div>
-  </div>
-  <button onclick="ScrollToTop()" id="BackToTop" class="shadow" title="Go to top"><i class="bi bi-chevron-up"></i></button>
-  <!-- Home -->
+<body class="text-white">
+
   <div id="home" class="pb-5x row">
-    <div class="col-md-6">
+    <div class="col-md-4">
       <img src="https://github.com/LalitNM.png" alt="avatar" class="rounded-circle avatar mx-auto d-block mt-5">
       <h2 class="text-center pt-3">Lalit Narayan Mudgal</h2>
-      <p class="text-center pt-3">Bioengineering Undergraduate<br> <a href="https://iitmandi.ac.in" target="_blank">IIT Mandi</a></p>
+      <p class="text-center pt-3">Integrate Master's Student<br>in Computational Biology at <a href="https://iitmandi.ac.in" target="_blank">IIT Mandi</a></p>
       <div class="follow-list text-center">
         <a href="https://twitter.com/AKAstrophile" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-twitter"></i></a>
         <a href="https://github.com/LalitNM" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-github"></i></a>
         <a href="https://www.linkedin.com/in/lalitnm/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-linkedin"></i></a>
         <a href="mailto:lalitrpvv@gmail.com" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-envelope"></i></a>
+        <br>
+        <a href="https://www.instagram.com/AKAstrophile/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/universephile/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-facebook"></i></a>
+        <a href="tel:+919990991108"><i class="bi bi-telephone" aria-hidden="true"></i></a>
       </div>
     </div>
-    <div class="col-md-6">
-      <h1 class="text-center my-4">Biography</h1>
+    <div class="col-md-8 pt-5">
+      <!-- <h1 class="text-center my-4">Biography</h1> -->
       <p class="p-4">
-        <b><i>I am a biologist who likes to code!</i></b>
-        <br><br>I am studying B.Tech.-M.Tech. Dual Degree in Bioengineering at IIT Mandi. My areas of interest are <b>Synthetic Biology</b>, <b>Computational Biology</b>, <b>Astrobiology</b>, <b>Evolutionary Sciences</b> and <b>Data Science</b>. I
-        have done quite a few projects the fields mentioned above. I started my B.Tech. here at IIT Mandi in 2019. In my third year of dual degree program, I chose <b>Computational Bioengineering</b> as my specialization. I also have experience in
-        Team Leading and Volunteering. I had been Leader Coordinator at <a href="https://stac.iitmandi.co.in" target="_blank">Space Technology and Astronomy Cell, IIT Mandi</a>. I am also lead founder of <a href="https://instagram.com/kbg_iitmandi"
-          target="_blank">Kamand Bioengineering Group</a> here at IIT Mandi. <br><br><br>
-        <b><i>"May the sky remains clear!"</i></b>
+        I am an Integrated Master's student at IIT Mandi, specializing in Computational Biology. My academic pursuits have led me to work on several projects involving multi-omics approaches, utilizing both computational techniques and wet-lab experiments to analyze and understand biological systems. Through these projects, I have gained extensive experience in data analysis and experimental techniques, and I am eager to continue exploring computational or evolutionary biology. I have a keen interest in the exploration of the cosmos and the search for life beyond Earth, and have developed a passion for astronomy and astrobiology. 
+      </p>
+      <p class="p-4">
+        If you would like to learn more about my experience and projects, please visit <a href="https://www.linkedin.com/in/lalitnm/">my LinkedIn profile</a>. There you can find detailed information about my academic and professional background, as well as my skills and achievements. Additionally, you can view my resumes below to get a more comprehensive understanding of my qualifications. Thank you for your interest in my work.
       </p>
       <div class="row mx-5 text-center">
-        <div class="col-md-6">
+        <div class="col-md-6 mb-2">
           <button type="button" name="button" class="btn btn-secondary" onclick="location.href='https://drive.google.com/file/d/1H-RdablLuXrcF76TB2v4nLD6tltPIBo8/view?usp=sharing'">Brief Resume</button>
         </div>
         <div class="col-md-6">
@@ -64,265 +51,6 @@
     </div>
   </div>
   <hr>
-  <!-- Experience -->
-  <div id="experience" class="pb-5">
-    <h1 class="text-center py-4">Experience</h1>
-    <div class="row px-3">
-      <div class="col-md-6 pb-5 offset-md-3">
-        <div class="card h-100 highlighted-card">
-          <div class="card-header">
-            <h5 class="card-title">Industrial Internship</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Wrig Nanosystems, Dec 2021 – Feb 2022, 2 months</h6>
-          </div>
-          <div class="card-body">
-            <p class="card-text">I was offered a Project Management Internship at Wrig Nanosystems, a New Delhi based startup making Biomedical devices in Parwanoo, Himachal Pradesh.
-              The internship was on-site in Parwanoo.<br> I joined the company in December 2021. Worked on major expansion projects both in production and R&D department. And in the end, successfully completed the internship in February 2022.
-              During my internship, I got chance to work in-person directly with the Founder and Managing Director, Ambar Srivastava, of the company for a week. <br>
-              One of the product of the company is a biomedical strip which is used to check the level of hemoglobin in blood. I worked on projects to improve the quality assurance process of the product.
-              I worked on development of algorithm for Batch code (quality parameter) automation, preparation of a new algorithm for the quality testing of TrueHb strips, I worked on designing IoT network to improve the quality assurance process of
-              the product as well.
-            </p>
-            <a href="assets/documents/Experience Letter Lalit Narayan Mudgal.pdf" target="_blank" class="card-link">See Experience Letter</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 pb-5">
-        <div class="card h-100">
-          <div class="card-header">
-            <h5 class="card-title">Coordinator</h5>
-            <h6 class="card-subtitle mb-2 text-muted">STAC, IIT Mandi, Sep 2020 – Aug 2021, 1 year</h6>
-          </div>
-          <div class="card-body">
-            <p class="card-text">Space Technology and Astronomy Cell (STAC) is a student run organization at IIT Mandi. I looked after the overall working of the cell. This includes working on different science communication and outreach events,
-              working on open source projects and handling media responsibility. More than 30 events were organized in my tenure. These events were various competitions and talks by keynote speakers. I myself gave talks twice in front of all IIT
-              Mandi students. This was done under the supervision of Dr. Arnav Bhavsar, faculty at IIT Mandi.</p>
-            <a href="https://stac.iitmandi.co.in" target="_blank" class="card-link">STAC, IIT Mandi</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 pb-5">
-        <div class="card h-100">
-          <div class="card-header">
-            <h5 class="card-title">Lead Organiser</h5>
-            <h6 class="card-subtitle mb-2 text-muted">BioFest '21, SBS, IIT Mandi, July 2021, 1 month</h6>
-          </div>
-          <div class="card-body">
-            <p class="card-text">This was a fest organized to make students aware of career opportunities in the field of Bioengineering. A total of four speakers were invited to give talks in the areas of Computational Bioengineering and Biomedical
-              Engineering at the Fest. We had a paper presentation competition as well. I looked after the overall conduction of the Fest. My team also secured third position in Paper Presentation. This was done under guidance of Dr. Shyam Kumar
-              Masakapalli, faculty member at IIT Mandi.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 pb-5">
-        <div class="card h-100">
-          <div class="card-header">
-            <h5 class="card-title">Event Coordinator</h5>
-            <h6 class="card-subtitle mb-2 text-muted">STAC, IIT Mandi, Dec 2019 – Mar 2020, 4 months</h6>
-          </div>
-          <div class="card-body">
-            <p class="card-text">AstraX is the inter-college astro-meet organized by STAC, IIT Mandi. We have a five hour hackathon, Enigma, which focuses on Machine Learning in the field of Astronomy. I looked after making of problem statement and
-              execution of the event. The problem statement was developed by image dataset of SETI. About 30 participants attended the hackathon. The competition was judged by faculty members of IIT Mandi who are specialized in related fields, judges
-              were Dr. Aditya Nigam and Dr. Satyajit A. Thakor.</p>
-            <a href="https://astrax.in" target="_blank" class="card-link">AstraX, STAC, IIT Mandi</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr>
-  <!-- Projects -->
-  <div id="projects" class="pb-5">
-    <h1 class="text-center py-4">Projects</h1>
-    <div class="row px-3">
-      <div class="col-md-5 offset-md-1 pb-5">
-        <div class="card h-100 highlighted-card">
-          <div class="card-header">
-            <h5 class="card-title">IAU - Upliftment of Space Technology in Himalayas</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Feb 2021 - Present</h6>
-          </div>
-          <div class="card-body">
-            <p class="card-text">The International Astronomical Union's (IAU) Office of Astronomy for Development (OAD) and Astronomy Cell of IIT Mandi are working on a project to encourage the Astronomy Culture in Himalayan Region. <br> Me and my
-              friends at the Astronomy Cell organize informative talks and interesting events to engage Student Community of IIT Mandi and neighbouring schools in astronomy related activities. <a href="https://astrax.in/" target="_blank">AstraX
-                '21</a> was organised by the fund received from IAU.
-            </p>
-            <a href="https://stac.iitmandi.co.in/iau" target="_blank" class="card-link">See Project Details</a>
-            <a href="https://twitter.com/stac_iitmandi/status/1497262335085662210?s=20&t=uWcQOk8QIs_1m_z1MZIXhw" target="_blank" class="card-link">See Latest Tweet</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-5 pb-5">
-        <div class="card h-100 highlighted-card">
-          <div class="card-header">
-            <h5 class="card-title">University Rover Challenge - Science Mission</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Oct 2021 - Present</h6>
-          </div>
-          <div class="card-body">
-            <p class="card-text">I am leading the Life Science Module which works on the astrobiological aspects of the Rover. This is also known as Science Mission. We are working on finding traces of extinct, extent and no life. We are working on
-              biological tests, analysis of data from sensors and a machine learning algorithm to detect traces of life.</p>
-            <a href="https://rover.iitmandi.co.in" target="_blank" class="card-link">Rover Deimos Website</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 offset-md-2 pb-5">
-        <div class="card h-100">
-          <div class="card-header">
-            <h5 class="card-title">Biostatistical Data Analysis in R</h5>
-            <h6 class="card-subtitle mb-2 text-muted">May 2021</h6>
-          </div>
-          <div class="card-body">
-            <p class="card-text">The dataset of a controlled experiment, in which the cholesterol level LDL was measured in [mg/L], was given. First, I analyzed the dataset using ANOVA, then I analyzed the dataset using regression analysis. Tests
-              like post-hoc test were conducted. This Project was done as a part of the course 'Applied Biostatistics' under the supervision of Dr. Erwin Fuhrer, Faculty member at IIT Mandi.</p>
-            <a href="https://github.com/LalitNM/Biostatistical-Analysis" target="_blank" class="card-link">See Project</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 pb-5">
-        <div class="card h-100">
-          <div class="card-header">
-            <h5 class="card-title">9th Inter-IIT Tech Meet - Astrosat Observations</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Jan 2021 </h6>
-          </div>
-          <div class="card-body">
-            <p class="card-text">At the 9th Inter-IIT Tech Meet, me and my Team participated. I was acting as the Co-lead in the team. AstroSat works on a proposal-based observatory and all the data is made available to the public after a lock-in
-              period (if any). We developed a Web-based Visualization Tool for Astrosat Observations.</p>
-            <a href="https://github.com/STAC-IITMandi/9th-Inter-iit" target="_blank" class="card-link">See Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr>
-  <!-- Achievements -->
-  <div id="achievements" class="pb-5">
-    <h1 class="text-center py-4">Achievements</h1>
-    <div class="row px-3">
-      <div class="col-md-6 offset-md-3 pb-5">
-        <div class="card h-100 highlighted-card">
-          <div class="card-header">
-            <h5 class="card-title">Founder, KBG IIT Mandi</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Jan 2022</h6>
-          </div>
-          <div class="card-body">
-            <p class="card-text">Kamand Bioengineering Group is a student club at IIT Mandi. Me and my close friends used to host many interesting events related to field of Bioengineering including iGEM activities and BioFest '21. Later on we
-              registered it with Student Gymkhana of IIT Mandi. The club was announced officially in January 2022. I'm glad to be the lead founder of the club.</p>
-            <a href="https://instagram.com/kbg_iitmandi" target="_blank" class="card-link">KBG, IIT Mandi | Instagram</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 offset-md-2 pb-5">
-        <div class="card h-100">
-          <div class="card-header">
-            <h5 class="card-title">Second Runner up at BioFest '21</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Jul 2021, BioFest '21, SBS, IIT Mandi</h6>
-          </div>
-          <div class="card-body">
-            <p class="card-text">Me and my team secured position of Second Runner up at the Flash Talk Competition at BioFest '21. The theme of the Flash Talk Competition was 'Latest Breakthroughs in the Field of Bioengineering'. </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 pb-5">
-        <div class="card h-100">
-          <div class="card-header">
-            <h5 class="card-title">First Runner up in AstraX Event</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Mar 2020, STAC, IIT Mandi</h6>
-          </div>
-          <div class="card-body">
-            <p class="card-text">Messier marathon as the name suggests was a marathon to point messier objects. The event was judged by Mr. Vikrant Narang from Space India. Me and my team were announced as the First runner up in this competition.</p>
-            <a href="https://astrax.in" target="_blank" class="card-link">AstraX, STAC, IIT Mandi</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 offset-md-2 pb-5">
-        <div class="card h-100">
-          <div class="card-header">
-            <h5 class="card-title">First Runner up in "What's Up"</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Nov 2019, STAC, IIT Mandi</h6>
-          </div>
-          <div class="card-body">
-            <p class="card-text">This will be an observational event, in which participants will have to locate as many celestial objects (from a given set of objects) as possible within a limited time frame. I was announced the First runner up in
-              this event.</p>
-            <a href="https://stac.iitmandi.co.in" target="_blank" class="card-link">STAC, IIT Mandi</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 pb-5">
-        <div class="card h-100">
-          <div class="card-header">
-            <h5 class="card-title">First Position in URI Online Judge Competition</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Aug 2019, Programming Club, IIT Mandi</h6>
-          </div>
-          <div class="card-body">
-            <p class="card-text">The Programming Club hosted a 3 weeks long online programming marathon on URI online judge. The contest was only for first year students and the goal was to help them get started with the basics of programming. I
-              secured first position in my whole branch.</p>
-            <a href="https://pc.iitmandi.co.in" target="_blank" class="card-link">Programming Club, IIT Mandi</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Contact -->
-  <div id="contact" class="text-white pt-5">
-    <div class="row">
-      <div class="col-sm-4 px-5">
-        <form action="https://formspree.io/xpzjkbpk" method="POST">
-          <h3 class="text-center py-3">Contact Form</h3>
-          <input type="text" class="form-control mt-3" placeholder="Name" name="name">
-          <input type="text" class="form-control mt-3" placeholder="Email" name="email">
-          <textarea class="form-control mt-3" placeholder="Message" name="message"></textarea>
-          <div class="d-flex justify-content-center mt-3">
-            <button type="submit" class="btn btn-outline-light">Send</button>
-          </div>
-        </form>
-      </div>
-      <div class="col-sm-4 px-5">
-        <h3 class="text-center py-3">Contact Info</h3>
-        <div class="row">
-          <div class="col-2" style="font-size: 2rem">
-            <p><i class="bi bi-telephone" aria-hidden="true"></i></p>
-          </div>
-          <div class="col-10 pt-3">
-            <p> <a href="tel:+919990991108"> +91 999 099 1108</a></p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-2" style="font-size: 2rem">
-            <p><i class="bi bi-map" aria-hidden="true"></i></p>
-          </div>
-          <div class="col-10">
-            <p> Lalit Narayan Mudgal (B19012), Surajtaal Hostel, North Campus, IIT Mandi, Himachal Pradesh, India, PIN - 175005</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-2" style="font-size: 2rem">
-            <p><i class="bi bi-at" aria-hidden="true"></i></p>
-          </div>
-          <div class="col-10">
-            <p> <a href="mailto:lalitrpvv@gmail.com">lalitrpvv@gmail.com</a> <br> <a href="mailto:B19012@students.iitmandi.ac.in">B19012@students.iitmandi.ac.in</a> </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 px-5">
-        <h3 class="text-center py-3">Social Links</h3>
-        <div class="follow-list text-center">
-          <a href="https://twitter.com/AKAstrophile" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-twitter"></i></a>
-          <a href="https://github.com/LalitNM" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-github"></i></a>
-          <a href="https://www.linkedin.com/in/lalitnm/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-linkedin"></i></a>
-          <a href="mailto:lalitrpvv@gmail.com" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-envelope"></i></a>
-          <a href="https://www.instagram.com/AKAstrophile/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.facebook.com/universephile/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-facebook"></i></a>
-          <!-- <a href="https://vimeo.com/user151744469/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-vimeo"></i></a>
-          <a href="https://www.behance.net/lalitmudgal/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-behance"></i></a>
-          <a href="https://www.bandlab.com/lalitnm/" target="_blank" class="ml-1 mr-1 follow-link"><i class="bi bi-bandlab"></i></a> -->
-        </div>
-      </div>
-    </div>
-    <div class="copyright text-center mt-2 pb-2">
-      <p> &copy; <script>
-          document.write(new Date().getFullYear());
-
-        </script><a href="https://github.com/LalitNM/" target="_blank"> Lalit Narayan Mudgal</a>, All Rights Reserved.</p>
-    </div>
-  </div>
   <script src="assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
