@@ -1,0 +1,130 @@
+/* General Theme Light */
+.theme-light {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+.theme-light .navbar,
+.theme-light .section,
+.theme-light .bg-alt {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+.theme-light .bg-alt {
+  background-color: #f8f9fa;
+}
+
+.theme-light .card-theme {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+/* General Theme Dark */
+.theme-dark {
+  background-color: #121212;
+  color: #eeeeee;
+}
+
+.theme-dark .navbar,
+.theme-dark .section,
+.theme-dark .bg-alt {
+  background-color: #121212;
+  color: #eeeeee;
+}
+
+.theme-dark .bg-alt {
+  background-color: #1f1f1f;
+}
+
+.theme-dark .card-theme {
+  background-color: #1e1e1e;
+  color: #eeeeee;
+}
+
+/* Shared Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero {
+  padding: 4rem 1rem 3rem;
+}
+
+.hero img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #008080;
+  margin-bottom: 1rem;
+}
+
+.hero .social-links a {
+  margin: 0 0.75rem;
+  text-decoration: none;
+  color: #007b7b;
+}
+
+.section h2 {
+  font-weight: 600;
+  color: #008080;
+  margin-bottom: 2rem;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  border-left: 3px solid #008080;
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 0.25rem;
+  left: -1.1rem;
+  background-color: #008080;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+.card-theme {
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.card-theme:hover {
+  transform: translateY(-4px);
+}
+
+.btn-theme-toggle {
+  background: none;
+  border: 1px solid #008080;
+  color: #008080;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  line-height: 1;
+}
+
+.badge-skill {
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  background-color: #e0f7f7;
+  font-weight: 500;
+  color: #005f5f;
+}
+
+.theme-dark .badge-skill {
+  background-color: #003c3c;
+  color: #d0ffff;
+}
